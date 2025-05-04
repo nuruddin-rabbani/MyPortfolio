@@ -11,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <title>Nuruddin Rabbani | Web Developer</title>
   </head>
   <body>
@@ -18,18 +19,50 @@
     <header class="header">
       <div class="container">
         <div class="logo">
-          <h1>Rabbani</h1>
+          <h1 class="brandName">Rabbani</h1>
         </div>
+
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li class="sidebar-close-button">
+              <svg
+                onclick="hideSidebar()"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#956eca"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </li>
+            <li class="sidebarLogo"><a href="#">Rabbani</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
-            <a class="cta-btn download-CV-btn" href="#">Download CV</a>
+            <li><a class="cta-btn download-CV-btn" href="#">Download CV</a></li>
           </ul>
         </nav>
+
+        <div class="hamburger">
+          <li>
+            <svg
+              onclick="showSidebar()"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#956eca"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </div>
       </div>
 
       <!--! Heor Section -->
@@ -46,9 +79,7 @@
             and create impactful web experiences.
           </p>
           <div class="social-media-area">
-            <a class="cta-btn cta-about" href="https://www.facebook.com"
-              >About Me</a
-            >
+            <a class="cta-btn cta-about" href="#">About Me</a>
             <div class="socail-icons">
               <a href=""><i class="fa-brands fa-facebook-f"></i></a>
               <a href="#"> <i class="fa-brands fa-twitter"></i></a>
@@ -69,5 +100,7 @@
 
     <!-- Footer -->
     <footer></footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

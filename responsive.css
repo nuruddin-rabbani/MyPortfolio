@@ -80,13 +80,19 @@
 
   .hamburger {
     display: block;
-    background: #000;
+    /* background: #956eca; */
+    background: linear-gradient(
+      to right,
+      #da22ff 0%,
+      #9733ee 51%,
+      #da22ff 100%
+    );
     border-radius: 4px;
   }
 
   .hamburger li {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,9 +102,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    background: #000;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(
+      to right,
+      #da22ff 0%,
+      #9733ee 51%,
+      #da22ff 100%
+    );
     position: absolute;
     bottom: 2%;
     right: 2%;
@@ -106,6 +117,8 @@
   }
 
   .sidebar-close-button svg {
+    width: 20px;
+    height: 20px; 
     position: inherit;
   }
 
@@ -145,7 +158,6 @@
   .hero-left {
     order: 2;
     flex-basis: 100%;
-    /* margin-top: -20px; */
     z-index: 1;
   }
 

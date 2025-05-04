@@ -44,6 +44,10 @@ body {
   padding: 0 7px;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 /* =========Header Section============*/

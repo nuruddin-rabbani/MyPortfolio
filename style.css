@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
+@font-face {
+  font-family: myFirstFont;
+  src: url(font/HomeVideo-BLG6G.ttf);
+}
 :root {
   --button-bg: #956eca;
   --violent: #956eca;
-  --text: #6f6b80;
+  --text: #b1afb9;
   --black: #000;
   --white: #fff;
 }
@@ -18,8 +21,8 @@
 .cta-btn {
   text-decoration: none;
   border: 2px solid var(--violent);
-  outline: none;
   border-radius: 50px;
+  /* outline: none; */
   font-size: 15px;
   font-weight: 500;
   transition: all 0.5s;
@@ -44,26 +47,36 @@ body {
   padding: 0 7px;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-
-  background-color: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+  background-image: url(imgs/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 /* =========Header Section============*/
 .header {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px 0;
-  background-image: url(imgs/banner-bg-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center right;
+  background: rgba(149, 110, 202, 0.2);
+  backdrop-filter: blue(15px);
 }
 
 .logo h1 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: myFirstfont;
+  letter-spacing: 5px;
+}
+
+.navbar {
+  position: fiex;
+  top: 20px;
+  padding: 0 30px;
+  border-radius: 50px;
+  background: rgba(149, 110, 202, 0.2);
+  backdrop-filter: blur(5px);
 }
 
 nav ul {
@@ -84,6 +97,7 @@ nav ul li a {
   font-weight: 500;
   position: relative;
   transition: all 0.5s;
+  color: #fff;
 }
 
 nav ul li a:hover {
@@ -137,14 +151,16 @@ nav ul li:last-child {
 
 /* Hero left */
 .hero-left {
-  flex-basis: 80%;
+  flex-basis: 50%;
 }
 
 .hero-left h1 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 600;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   padding: 30px 0;
+  font-family: myFirstFont;
+  letter-spacing: 5px;
 }
 
 .hero-left h2 {
@@ -174,10 +190,12 @@ nav ul li:last-child {
   background: var(--button-bg);
   color: var(--white);
   padding: 14px 35px;
+  box-shadow: 0px 5px 50px var(--violent);
 }
 
 .cta-about:hover {
   background: transparent;
+  color: #fff;
 }
 
 .social-media-area {
@@ -194,6 +212,7 @@ nav ul li:last-child {
 
 .socail-icons i {
   font-size: 15px;
+  color: #bbb;
 }
 
 .socail-icons a {

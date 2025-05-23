@@ -26,25 +26,16 @@
 
 .title-wrapper {
     display: flex;
+    align-items: flex-start;
+    padding: 40px 0;
 }
 
-.titleText-1,
-.titleText-2,
+.titleText,
 .titleExtension {
     font-weight: 800;
     line-height: 3.5rem;
     letter-spacing: 1px;
-}
-
-.titleText-1 {
-    font-size: 2rem;
-    padding-top: 20px;
-    font-weight: 500;
-}
-
-.titleText-2 {
     font-size: 4rem;
-    padding-bottom: 40px;
 }
 
 .titleExtension {
@@ -96,7 +87,7 @@
     font-weight: 600;
 }
 
-.hero-left h3>span {
+.hero-left h3 > span {
     color: var(--violent);
     font-weight: bold;
 }
@@ -174,7 +165,6 @@
     color: var(--black);
 }
 
-
 /* ==============Hero Right================= */
 
 .hero-right {
@@ -191,5 +181,6 @@
     max-width: 82%;
     height: auto;
     border-radius: 120px;
-    box-shadow: 0px 10px 50px 10px var(--violent), 0px 20px 80px 0px var(--violent) inset;
+    box-shadow: 0px 10px 50px 10px var(--violent),
+        0px 20px 80px 0px var(--violent) inset;
 }

@@ -71,7 +71,7 @@
 
     /* ==============Hero Section============== */
     #hero {
-        padding: 0;
+        padding: 100px 0 0 0;
         align-items: flex-start;
     }
 
@@ -97,13 +97,11 @@
         margin-left: 8px;
     }
 
-    .titleText-1 {
-        font-size: 1.2rem;
-        line-height: 2rem;
-        padding-top: 20px;
+    .title-wrapper {
+        padding: 30px 0;
     }
 
-    .titleText-2,
+    .titleText,
     .titleExtension {
         font-weight: 600;
         font-size: 2rem;
@@ -115,17 +113,19 @@
     }
 
     .designation-area {
-        padding-top: 2rem;
         gap: 1rem;
     }
 
     .designation {
         font-size: 1.3rem;
         font-weight: 500;
+        line-height: 1;
     }
 
     .borderTopText {
         font-size: var(--mobileTextSize);
+        top: -5px;
+        font-weight: 500;
     }
 
     .border-star-area {

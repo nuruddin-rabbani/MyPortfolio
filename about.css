@@ -101,6 +101,11 @@
   transition: all .4s;
 }
 
+.social-area a{
+  text-decoration: none;
+  color: var(--white); 
+}
+
 .social-area div:hover,
 .social-area div:hover .fa-brands {
   transform: scale(1.1);

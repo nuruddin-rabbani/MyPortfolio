@@ -1,0 +1,99 @@
+#services {
+    padding: 150px 0;
+    background: var(--servicesBgColor);
+}
+
+.service-heading,
+.service-icons {
+    display: flex;
+    align-items: center;
+}
+
+.services-area {
+    padding-top: 150px;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-image-area {
+    flex-basis: 50%;
+    max-width: 250px;
+    height: 300px;
+    transform: rotate(17deg);
+    margin-right: 50px;
+}
+
+.services {
+    flex-basis: 50%;
+}
+
+.serviceImage {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -50px;
+}
+
+.line {
+    margin-right: 30px;
+}
+
+.service-title {
+    font-family: var(--textFont);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service-1,
+.service-2,
+.service-3,
+.service-4 {
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding: 0 0 15px 0;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.service-1:hover .service-title,
+.service-2:hover .service-title,
+.service-3:hover .service-title,
+.service-4:hover .service-title {
+    background-image: var(--gradientColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -2px -2px 0px rgba(59, 167, 235, 0.1);
+}
+
+.service-1:hover .service-title,
+.service-2:hover .service-title,
+.service-3:hover .service-title,
+.service-4:hover .service-title {
+    background-image: var(--gradientColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -2px -2px 0px rgba(59, 167, 235, 0.1);
+}
+
+.service-1:hover,
+.service-2:hover,
+.service-3:hover,
+.service-4:hover {
+    background: linear-gradient(var(--servicesBgColor), var(--servicesBgColor)) padding-box,
+        linear-gradient(60deg, #bb6ffb, #fc5f67, #ffb054) border-box;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+
+
+.service-arrow {
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+}

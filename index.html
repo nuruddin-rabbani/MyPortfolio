@@ -1,106 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="pricing.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="responsive.css" />
     <title>Nuruddin Rabbani | Web Developer</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--! Header -->
-    <header class="header">
-      <div class="container navbar">
-        <div class="logo">
-          <h1 class="brandName">Rabbani</h1>
-        </div>
-
-        <nav>
-          <ul>
-            <li class="sidebar-close-button">
-              <svg
-                onclick="hideSidebar()"
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#fff"
-              >
-                <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                />
-              </svg>
-            </li>
-            <li class="sidebarLogo"><a href="#">Rabbani</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a class="cta-btn download-CV-btn" href="#">Download CV</a></li>
-          </ul>
-        </nav>
-
-        <div class="hamburger">
-          <li>
-            <svg
-              onclick="showSidebar()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#fff"
-            >
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-              />
-            </svg>
-          </li>
-        </div>
-      </div>
-
-      <!--! Heor Section -->
-      <section class="hero container">
-        <div class="hero-left">
-          <h2>Hi, I'm</h2>
-          <h1>Nuruddin Rabbani</h1>
-          <h3>A Junior Web Developer from <span>Dhaka</span></h3>
-          <p>
-            I’m Rabbani, a junior web developer skilled in HTML, CSS, and
-            JavaScript. I enjoy building clean, responsive websites and learning
-            new technologies like React. Passionate about coding and always
-            eager to grow, I’m looking for opportunities to collaborate, learn,
-            and create impactful web experiences.
-          </p>
-          <div class="social-media-area">
-            <a class="cta-btn cta-about" href="#">About Me</a>
-            <div class="socail-icons">
-              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"> <i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-behance"></i></a>
+    <header id="header">
+        <div class="container header-container navbar">
+            <div class="logo">
+                <h1 class="brandName gradientText">Rabbani</h1>
             </div>
-          </div>
+
+            <nav>
+                <ul class="menubar">
+                    <li class="sidebarLogo gradientText"><a class="gradientText" href="#">Rabbani</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li onclick=closeMenubar() class="close-btn">
+                        <img src="icons/close.png">
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#" class="cta-btn cta-getInTouch">
+                <span>Get In Touch</span>
+                <img src="imgs/icon-arrow-gd-1.svg">
+            </a>
+
+            <div onclick=openMenubar() class="hamburger">
+                <img src="icons/hamburger.png">
+            </div>
         </div>
 
-        <div class="hero-right">
-          <img src="imgs/Rabbanit.jpg" alt="heroImage" />
-        </div>
-      </section>
     </header>
 
-    <!-- Main -->
-    <main></main>
+    <!--! Main -->
+    <main>
+        <!--! Heor Section -->
+        <section id="hero">
+            <div class="container hero-container">
+                <div class="hero-left">
+                    <h2 class="greetingText">Hi! <img src="imgs/HiEmoji.svg" alt="">
+                        <h2>
+                            <h1 class="titleText-1 gradientText">Nuruddin </h1>
+                            <div class="title-wrapper">
+                                <h1 class="titleText-2 gradientText">Rabbani</h1>
+                                <h1 class="titleExtension">is a</h1>
+                            </div>
+                            <div class="designation-area">
+                                <div class="border-star-area">
+                                    <img class="border-star" src="imgs/border-star.png" alt="">
+                                    <span class="borderTopText">A Propessional</span>
+                                </div>
+                                <h3 class="designation gradientText">Frontend Developer</h3>
+                            </div>
+                            <p class="IntroText para">
+                                I’m Rabbani, a junior web developer skilled in HTML, CSS, and JavaScript. I enjoy
+                                building
+                                clean and responsive websites using new technologies.
+                            </p>
+                            <div class="CallToAction-area">
+                                <a href="#" class="cta-btn cta-hireMe">
+                                    <span>Hire Me</span>
+                                    <img src="imgs/icon-arrow-gd-1.svg" alt="">
+                                </a>
+                                <a href="#" class="cta-btn cta-portfolio">
+                                    <span>View My Work</span>
+                                </a>
+                            </div>
+                </div>
+                <div class="hero-right">
+                    <img class="hero-img-1" src="imgs/Rabbanit.png" alt="">
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer></footer>
+
+        <!--! About Section -->
+        <section id="about">
+            <div class="container about-container flex-row align-center space-between">
+                <div class="about-left">
+                    <img class="about-image" src="imgs/Place-Your-Image-1.png" alt="">
+                </div>
+                <div class="about-right">
+                    <h1 class="gradientText section-title">About Me</h1>
+                    <p class="para">
+                        I’m Esther Joy, a web developer dedicated to crafting dynamic, responsive, and SEO-friendly
+                        websites for businesses and individuals. I specialize in front, back-end integration, committed
+                        to exceeding expectations with high-quality work.</p>
+                    <div class="client-area">
+                        <div>
+                            <h2 class="number">4+</h2>
+                            <p>Years of Experience In <span>Development</span></p>
+                        </div>
+                        <div>
+                            <h2 class="number">500+</h2>
+                            <p>Successfully <span>Projects completed</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="number">105+</h2>
+                            <p>Global <span>Customers</span></p>
+                        </div>
+                    </div>
+                    <div class="social-area">
+                        <a href="#" class="cta-btn cta-downloadCV">
+                            <span>Download CV</span>
+                            <img src="imgs/icon-arrow-gd-1.svg" alt="">
+                        </a>
+                        <div>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-square-github"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--! Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="portfolio-header">
+                    <div class="inner-left">
+                        <h1 class="gradientText section-title">Explore My Works</h1>
+                        <p class="para">
+                            Each project highlights my approach to problem-solving, creativity, and technical expertise.
+                            Explore to surprise. 😮</p>
+                    </div>
+                    <div class="inner-right">
+                        <a href="#" class="cta-btn cta-viewPortfolio">
+                            <img src="imgs/icon-arrow-gd-1.svg" alt="">
+                            <span>View All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-images-gallery">
+                    <div class="portfolio-card">
+                        <img src="imgs/img-1-1.jpg" alt="">
+                        <div class="card-decription" style="padding-top: 25px">
+                            <div>
+                                <h3 class="image-title">Finance Landing Page</h3>
+                                <p class="image-subtitle">Website Design</p>
+                            </div>
+                            <div>
+                                <img class="portfolio-arrow" src="imgs/Arrow-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card card-margin-top">
+                        <img src="imgs/image-4-1.png" alt="">
+                        <div class="card-decription" style="padding-top: 25px">
+                            <div>
+                                <h3 class="image-title">Property Header Exploration</h3>
+                                <p class="image-subtitle">Website Design</p>
+                            </div>
+                            <div>
+                                <img class="portfolio-arrow" src="imgs/Arrow-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <img src="imgs/image-3-1.png" alt="">
+                        <div class="card-decription" style="padding-top: 25px">
+                            <div>
+                                <h3 class="image-title">Frank AI - HR Management SaaS Landing Page</h3>
+                                <p class="image-subtitle">Website Design</p>
+                            </div>
+                            <div>
+                                <img class="portfolio-arrow" src="imgs/Arrow-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card card-margin-top">
+                        <img src="imgs/image-5-1.jpg" alt="">
+                        <div class="card-decription" style="padding-top: 25px">
+                            <div>
+                                <h3 class="image-title">Online Video Calls and Meetings - Dashboard</h3>
+                                <p class="image-subtitle">Website Design</p>
+                            </div>
+                            <div>
+                                <img class="portfolio-arrow" src="imgs/Arrow-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--! Services Section -->
+        <section id="services">
+            <div class="container">
+                <div>
+                    <h1 class="gradientText section-title">Services That</h1>
+                    <div class="service-heading">
+                        <div class="service-icons">
+                            <img class="star" src="imgs/Vector-1.png" alt="">
+                            <img class="line" src="imgs/Line-2-1.png" alt="">
+                        </div>
+                        <h1 class="gradientText section-title ">I Provide</h1>
+                    </div>
+                </div>
+
+                <div class="services-area">
+                    <div class="services-image-area">
+                        <img class="serviceImage" src="imgs/codeing-1.jpg" alt="">
+                    </div>
+                    <div class="services">
+                        <div onclick=changeImageOne() class="service-1">
+                            <h2 class="service-title">Brand Identity Design</h2>
+                            <img class="service-arrow arrow-one" src="imgs/Arrow-1.svg" alt="">
+                        </div>
+                        <div onclick=changeImageTwo() class="service-2">
+                            <h2 class="service-title">UX/UI Design</h2>
+                            <img class="service-arrow arrow-two" src="imgs/Arrow-1.svg" alt="">
+                        </div>
+                        <div onclick=changeImageThree() class="service-3">
+                            <h2 class="service-title">App Development</h2>
+                            <img class="service-arrow arrow-three" src="imgs/Arrow-1.svg" alt="">
+                        </div>
+                        <div onclick=changeImageFour() class="service-4">
+                            <h2 class="service-title">Web Development</h2>
+                            <img class="service-arrow arrow-four" src="imgs/Arrow-1.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <h1 class="pricing-title gradientText section-title text-center">Pricing Plan</h1>
+                <div class="price-card-area">
+                    <div class="price-card price-card-1">
+                        <div class="price-card-top">
+                            <h5 class="pricing-card-topText">Pay as you go</h5>
+                            <div class="price">
+                                <h1 class="pricing-card-title">$200</h1>
+                                <span class="pricing-card-subtitle">/ Per month</span>
+                            </div>
+                            <div class="h-roll"></div>
+                        </div>
+                        <div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Flat rate for design</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Stop and resume anytime</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>share the project scopeadvance</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Daily work updates</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Rapid communication</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Project duration less 1 month</span>
+                            </div>
+                        </div>
+                        <button class="price-button"><a href="#">Choose Plan</a></button>
+                    </div>
+
+                    <div class="price-card price-card-1">
+                        <div class="price-card-top">
+                            <h5 class="pricing-card-topText">Pay as you go</h5>
+                            <div class="price">
+                                <h1 class="pricing-card-title">$300</h1>
+                                <span class="pricing-card-subtitle">/ Per month</span>
+                            </div>
+                            <div class="h-roll"></div>
+                        </div>
+                        <div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Get a free quote</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Get a fixed budget</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Daily work updates</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Rapid communication</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Start project with 50% upfront</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Project duration in 2 months</span>
+                            </div>
+                        </div>
+                        <button class="price-button"><a href="#">Choose Plan</a></button>
+                    </div>
+
+                    <div class="price-card price-card-1">
+                        <div class="price-card-top">
+                            <h5 class="pricing-card-topText">Pay as you go</h5>
+                            <div class="price">
+                                <h1 class="pricing-card-title">$350</h1>
+                                <span class="pricing-card-subtitle">/ Per month</span>
+                            </div>
+                            <div class="h-roll"></div>
+                        </div>
+                        <div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Unlimited works</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Unlimited meetings</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Dedicated resource </span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Project management tool access</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Data driven approach</span>
+                            </div>
+                            <div class="price-card-icon">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Duration more than 2 month</span>
+                            </div>
+                        </div>
+                        <button class="price-button"><a href="#">Choose Plan</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--! Contact Area -->
+        <section id="contact-area">
+            <div class="container">
+                <h1 class="gradientText section-title text-center">Have Any Project in Mind?</h1>
+                <div class="form-area">
+                    <form>
+                        <div class="name-area">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="name-area">
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="name-area">
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="name-area">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn"><a href="#">Submit</a></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!--! Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="logo">
+                    <h1 class="brandName gradientText">Rabbani</h1>
+                </div>
+
+                <ul class="footer-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyrightText">© Copyright 2025. Nuruddin Rabbani - All Rights Reserved.</p>
+                <div class="social-area">
+                    <a href="#" class="cta-btn cta-footer">
+                        <span class="footer-cta-text">Download CV</span>
+                        <img src="imgs/icon-arrow-gd-1.svg" alt="">
+                    </a>
+                    <div>
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

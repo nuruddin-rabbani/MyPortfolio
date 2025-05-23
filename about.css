@@ -1,0 +1,139 @@
+/* ===========About Right============== */
+
+#about {
+  background: var(--aboutBgColor);
+  padding: 150px 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+/* =====About Left======= */
+.about-left {
+  flex-basis: 50%;
+  position: relative;
+  background: url(imgs/Group-46953-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-image {
+  max-width: 75%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+/* =========About Right=============== */
+.about-right {
+  flex-basis: 50%;
+}
+
+.client-area,
+.social-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.client-area {
+  gap: 1rem;
+  padding: 40px 0;
+}
+
+.social-area {
+  padding: 20px 0;
+}
+
+.number {
+  font-size: 36px;
+  font-weight: 600;
+  background-image: linear-gradient(45deg, #ff3bce 0%, #3ba7eb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -2px -2px 0px rgba(59, 167, 235, 0.1);
+}
+
+.client-area div p {
+  font-size: var(--textSize);
+  font-family: var(--textFont);
+}
+
+.client-area div span {
+  display: block;
+}
+
+.cta-downloadCV {
+  padding: 18px 30px;
+  background: var(--gradientColor);
+  border: none;
+}
+
+.cta-downloadCV:hover {
+  animation: shake 0.5s;
+}
+
+.social-area {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-area div {
+  width: 50px;
+  height: 50px;
+  background: var(--gradientButton);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s;
+}
+
+.social-area div:hover,
+.social-area div:hover .fa-brands {
+  transform: scale(1.1);
+}
+
+.social-area .fa-brands {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+  z-index: 444;
+}
+
+.extra {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.extra button {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(60deg, #00f, #00e8ff) border-box;
+  color: #313149;
+  padding: 20px 70px;
+  border: 5px solid transparent;
+  border-radius: 40px;
+  display: inline-block;
+  font-size: 28px;
+}
+
+.extra button:hover {
+  background: #000;
+}

@@ -1,0 +1,114 @@
+#pricing {
+    background: #1E1E1E;
+    padding: 150px 0;
+}
+
+.pricing-title {
+    margin-bottom: 2.5rem;
+}
+
+.price-card-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.price-card {
+    border: 1px solid #3D3D3D;
+    padding: 40px;
+}
+
+.pricing-card-1:hover {
+    background: var(--gradientButton);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.price-card-top {
+    padding-bottom: 2rem;
+}
+
+.pricing-card-topText {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.pricing-card-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #EB5939;
+    line-height: 0;
+    padding: 50px 0;
+    margin-right: 10px;
+
+}
+
+.pricing-card-subtitle {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.h-roll {
+    width: 100%;
+    height: 1px;
+    background: var(--gradientColor);
+}
+
+.fa-solid {
+    display: inline-block;
+    font-size: 14px;
+    color: #EB5939;
+    background: #352825;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.price-card-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.price-button {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 100px;
+    background: var(--gradientButton);
+    color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 100px;
+    margin-top: 1rem;
+}
+
+.price-button:hover {
+    background: linear-gradient(transparent, transparent) padding-box,
+        linear-gradient(60deg, #bb6ffb, #fc5f67, #ffb054) border-box
+}
+
+.price-button a {
+    text-decoration: none;
+    font-family: var(--textFont);
+    text-transform: uppercase;
+    font-style: 17px;
+    font-weight: 600;
+    background-image: var(--gradientColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -2px -2px 0px rgba(59, 167, 235, 0.1);
+}
+
+.price-button:hover a {
+    background-image: linear-gradient(to right,
+            #fff 0%,
+            #fff 52%,
+            #fff 100%);
+    background-clip: text;
+    font-weight: 900;
+}

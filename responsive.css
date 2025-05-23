@@ -1,390 +1,386 @@
 @media screen and (max-width: 768px) {
-
-  .container {
-    padding: 0 3%;
-  }
-
-  .section-title {
-    font-size: 2rem;
-    font-weight: 600;
-  }
-
-  /* =====Header Area===== */
-  .brandName {
-    font-size: 2rem;
-  }
-
-  nav ul {
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    align-items: flex-start;
-    background: var(--mobileNavBgColor);
-    opacity: 1;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  nav ul li {
-    display: block;
-    width: 100%;
-  }
-
-  .sidebarLogo {
-    width: 100%;
-    display: block;
-  }
-
-  .sidebarLogo a {
-    font-size: 2rem;
-    font-weight: 600;
-  }
-
-  .sidebarLogo:hover {
-    background: transparent;
-  }
-
-  .cta-getInTouch {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .close-btn {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 2%;
-    right: 0
-  }
-
-  .close-btn:hover {
-    background: transparent;
-  }
-
-  /* ==============Hero Section============== */
-  #hero {
-    padding: 0;
-    align-items: flex-start;
-  }
-
-  .hero-container {
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    gap: 5rem;
-  }
-
-  .CallToAction-area {
-    padding-top: 10px;
-  }
-
-  .greetingText {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-
-  .greetingText img {
-    width: 1.5rem;
-    margin-left: 8px;
-  }
-
-  .titleText-1 {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding-top: 20px;
-  }
-
-  .titleText-2,
-  .titleExtension {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 1;
-  }
-
-  .titleText-2 {
-    padding-bottom: 0;
-  }
-
-
-  .designation-area {
-    padding-top: 2rem;
-    gap: 1rem;
-  }
-
-  .designation {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  .borderTopText {
-    font-size: var(--mobileTextSize);
-  }
-
-  .border-star-area {
-    width: 120px;
-  }
-
-  .hero-left,
-  .hero-right {
-    flex-basis: 100%;
-    width: 100%;
-  }
-
-  .hero-left {
-    order: 2;
-  }
-
-  .hero-right {
-    order: 1;
-  }
-
-  .para {
-    font-size: 13px;
-    padding: 20px 0;
-  }
-
-  .hero-img-1 {
-    max-width: 60%;
-    height: auto;
-  }
-
-
-  .cta-btn {
-    font-size: 1rem;
-    font-weight: 500;
-    border: 1px solid transparent;
-    line-height: 0;
-  }
-
-  .cta-hireMe,
-  .cta-downloadCV {
-    padding: 13px 15px;
-  }
-
-  .cta-hireMe img,
-  .cta-downloadCV img {
-    width: 1rem;
-  }
-
-
-  /* ============About Section================ */
-  #about {
-    padding: 100px 0;
-  }
-
-  .about-container {
-    flex-direction: column;
-  }
-
-  .about-left {
-    justify-content: center;
-    background-position: center;
-  }
-
-  .about-image {
-    max-width: 70%;
-    margin-top: 10px;
-    margin-right: 10px;
-  }
-
-  .client-area {
-    padding: 20px 0;
-  }
-
-  .client-area div p {
-    font-size: var(--mobileTextSize);
-    font-weight: 300;
-  }
-
-  .number {
-    font-size: 26px;
-  }
-
-  .social-area {
-    gap: 1rem;
-  }
-
-  .social-area div {
-    width: 40px;
-    height: 40px;
-  }
-
-  .social-area .fa-brands {
-    font-size: .9rem;
-  }
-
-
-  /* =============Portfolio Section================= */
-  #portfolio {
-    padding: 100px 0;
-  }
-
-  .portfolio-header {
-    align-items: flex-start;
-  }
-
-  .inner-left {
-    flex-basis: 80%;
-  }
-
-  .inner-right {
-    flex-basis: 20%;
-  }
-
-  .cta-viewPortfolio span {
-    font-size: var(--mobileTextSize);
-  }
-
-  .cta-viewPortfolio img {
-    width: 1rem;
-  }
-
-  .cta-viewPortfolio {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .portfolio-images-gallery {
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    padding: 100px 0 0 0;
-  }
-
-  .portfolio-images-gallery img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .portfolio-card {
-    height: auto;
-  }
-
-  .image-title {
-    font-size: 1.3rem;
-  }
-
-  .image-subtitle {
-    font-size: var(--mobileTextSize);
-  }
-
-  .card-margin-top {
-    margin-top: 0;
-  }
-
-  /* ================Service Area==================== */
-  #services {
-    padding: 100px 0;
-  }
-
-  .service-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .services-image-area {
-    flex-basis: 100%;
-    margin-right: 40px;
-  }
-
-  .services {
-    flex-basis: 100%;
-    width: 100%;
-  }
-
-  .services-area {
-    padding-top: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .service-title {
-    font-size: 1.2rem;
-  }
-
-  /* ===============Pricing Area================= */
-  #pricing {
-    padding: 100px 0;
-  }
-
-  .price-card-area {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 4rem;
-  }
-
-  .price {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding: 20px 0;
-  }
-
-  .pricing-card-title {
-    font-size: 2rem;
-    padding: 20px 0;
-  }
-
-  .price-card {
-    border: 1px solid #3D3D3D;
-    padding: 40px 20px;
-  }
-
-  /* ===============Contact Area=================== */
-  .form-area {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 60px;
-  }
-
-  /* ==============Footer Area============== */
-  footer {
-    padding-top: 30px;
-  }
-
-  .footer-top,
-  .footer-bottom {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-top {
-    margin-bottom: 1rem;
-  }
-
-  .footer-menu {
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .social-area {
-    flex-wrap: wrap;
-  }
-
-  .copyrightText {
-    order: 2;
-    text-align: center;
-  }
+    .container {
+        padding: 0 3%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    /* =====Header Area===== */
+    .brandName {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+        background: var(--mobileNavBgColor);
+        opacity: 1;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .sidebarLogo {
+        width: 100%;
+        display: block;
+    }
+
+    .sidebarLogo a {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .sidebarLogo:hover {
+        background: transparent;
+    }
+
+    .cta-getInTouch {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .close-btn {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 2%;
+        right: 0;
+    }
+
+    .close-btn:hover {
+        background: transparent;
+    }
+
+    /* ==============Hero Section============== */
+    #hero {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        gap: 5rem;
+    }
+
+    .CallToAction-area {
+        padding-top: 10px;
+    }
+
+    .greetingText {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .greetingText img {
+        width: 1.5rem;
+        margin-left: 8px;
+    }
+
+    .titleText-1 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding-top: 20px;
+    }
+
+    .titleText-2,
+    .titleExtension {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .titleText-2 {
+        padding-bottom: 0;
+    }
+
+    .designation-area {
+        padding-top: 2rem;
+        gap: 1rem;
+    }
+
+    .designation {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .borderTopText {
+        font-size: var(--mobileTextSize);
+    }
+
+    .border-star-area {
+        width: 120px;
+    }
+
+    .hero-left,
+    .hero-right {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .hero-left {
+        order: 2;
+    }
+
+    .hero-right {
+        order: 1;
+    }
+
+    .para {
+        font-size: 13px;
+        padding: 20px 0;
+    }
+
+    .hero-img-1 {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        font-weight: 500;
+        border: 1px solid transparent;
+        line-height: 0;
+    }
+
+    .cta-hireMe,
+    .cta-downloadCV {
+        padding: 13px 15px;
+    }
+
+    .cta-hireMe img,
+    .cta-downloadCV img {
+        width: 1rem;
+    }
+
+    /* ============About Section================ */
+    #about {
+        padding: 100px 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-left {
+        justify-content: center;
+        background-position: center;
+    }
+
+    .about-image {
+        max-width: 70%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .client-area {
+        padding: 20px 0;
+    }
+
+    .client-area div p {
+        font-size: var(--mobileTextSize);
+        font-weight: 300;
+    }
+
+    .number {
+        font-size: 26px;
+    }
+
+    .social-area {
+        gap: 1rem;
+    }
+
+    .social-area div {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-area .fa-brands {
+        font-size: 0.9rem;
+    }
+
+    /* =============Portfolio Section================= */
+    #portfolio {
+        padding: 100px 0;
+    }
+
+    .portfolio-header {
+        align-items: flex-start;
+    }
+
+    .inner-left {
+        flex-basis: 80%;
+    }
+
+    .inner-right {
+        flex-basis: 20%;
+    }
+
+    .cta-viewPortfolio span {
+        font-size: var(--mobileTextSize);
+    }
+
+    .cta-viewPortfolio img {
+        width: 1rem;
+    }
+
+    .cta-viewPortfolio {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .portfolio-images-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        padding: 100px 0 0 0;
+    }
+
+    .portfolio-images-gallery img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .portfolio-card {
+        height: auto;
+    }
+
+    .image-title {
+        font-size: 1.3rem;
+    }
+
+    .image-subtitle {
+        font-size: var(--mobileTextSize);
+    }
+
+    .card-margin-top {
+        margin-top: 0;
+    }
+
+    /* ================Service Area==================== */
+    #services {
+        padding: 100px 0;
+    }
+
+    .service-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .services-image-area {
+        flex-basis: 100%;
+        margin-right: 40px;
+    }
+
+    .services {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .services-area {
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .service-title {
+        font-size: 1.2rem;
+    }
+
+    /* ===============Pricing Area================= */
+    #pricing {
+        padding: 100px 0;
+    }
+
+    .price-card-area {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+
+    .price {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 20px 0;
+    }
+
+    .pricing-card-title {
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+
+    .price-card {
+        border: 1px solid #3d3d3d;
+        padding: 40px 20px;
+    }
+
+    /* ===============Contact Area=================== */
+    .form-area {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    /* ==============Footer Area============== */
+    footer {
+        padding-top: 30px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-top {
+        margin-bottom: 1rem;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .social-area {
+        flex-wrap: wrap;
+    }
+
+    .copyrightText {
+        order: 2;
+        text-align: center;
+        font-size: 10px;
+    }
 }

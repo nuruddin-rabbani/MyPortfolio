@@ -1,4 +1,5 @@
-@media screen and (max-width: 768px) {
+/* ==============Mobile Screen================== */
+@media screen and (max-width: 767px) {
     .container {
         padding: 0 3%;
     }
@@ -84,6 +85,7 @@
     }
 
     .CallToAction-area {
+        flex-wrap: wrap;
         padding-top: 10px;
     }
 
@@ -194,6 +196,7 @@
     }
 
     .client-area {
+        flex-wrap: wrap;
         padding: 20px 0;
     }
 
@@ -295,6 +298,29 @@
         align-items: center;
     }
 
+    .service-1,
+    .service-2,
+    .service-3,
+    .service-4 {
+        align-items: flex-start;
+        gap: 0rem;
+    }
+
+    .service-arrow {
+        margin-left: 20px;
+    }
+
+    .service-icons {
+        width: 60px;
+    }
+
+    .star {
+        width: 20px;
+    }
+    .line {
+        width: 30px;
+    }
+
     .services-image-area {
         flex-basis: 100%;
         margin-right: 40px;
@@ -382,5 +408,121 @@
         order: 2;
         text-align: center;
         font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    .container {
+        padding: 0 3%;
+    }
+
+    .para {
+        font-size: 16px;
+        font-size: var(--tabletTextSize);
+    }
+
+    .cta-btn {
+        font-size: 1.2rem;
+        font-weight: 600;
+        border: 1px solid transparent;
+        line-height: 0;
+    }
+
+    .cta-hireMe,
+    .cta-downloadCV {
+        padding: 17px 30px;
+    }
+
+    .cta-hireMe img,
+    .cta-downloadCV img {
+        width: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    /* ===============Table Hero Section================  */
+
+    #hero {
+        padding: 130px 0;
+    }
+
+    .hero-left {
+        flex-basis: 60%;
+        padding-right: 30px;
+    }
+
+    .hero-right {
+        flex-basis: 40%;
+    }
+
+    .hero-container {
+        gap: 1rem;
+    }
+
+    .greetingText {
+        font-size: 2.5rem;
+    }
+
+    .greetingText img {
+        width: 40px;
+    }
+
+    .titleText,
+    .titleExtension {
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .border-star {
+        width: 130px;
+    }
+
+    .borderTopText {
+        font-size: 1rem;
+    }
+
+    .designation-area {
+        gap: 1rem;
+    }
+
+    .designation {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    /* ===============Table About Section================  */
+    .social-area {
+        gap: 10px;
+    }
+
+    .about-left {
+        flex-basis: 40%;
+    }
+
+    .about-right {
+        flex-basis: 60%;
+    }
+
+    .about-image {
+        margin-top: 55px;
+        margin-right: 25px;
+    }
+
+    /* =================Pricing Card Ared========================== */
+    .price-card-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 805px) and (max-width: 1023px) {
+    .social-area {
+        gap: 1rem;
+    }
+    .about-image {
+        margin-top: 60px;
+        margin-right: 25px;
     }
 }

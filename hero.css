@@ -21,7 +21,8 @@
 /* =======Hero left============== */
 
 .hero-left {
-    flex-basis: 50%;
+    flex-basis: 60%;
+    margin-right: 10%;
 }
 
 .title-wrapper {

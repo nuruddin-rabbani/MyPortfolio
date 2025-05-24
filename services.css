@@ -3,6 +3,12 @@
     background: var(--servicesBgColor);
 }
 
+.service-header {
+    animation-name: right2left;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
 .service-heading,
 .service-icons {
     display: flex;
@@ -15,6 +21,10 @@
     gap: 8rem;
     align-items: center;
     justify-content: center;
+
+    animation-name: appear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .services-image-area {
@@ -85,12 +95,12 @@
 .service-2:hover,
 .service-3:hover,
 .service-4:hover {
-    background: linear-gradient(var(--servicesBgColor), var(--servicesBgColor)) padding-box,
+    background: linear-gradient(var(--servicesBgColor), var(--servicesBgColor))
+            padding-box,
         linear-gradient(60deg, #bb6ffb, #fc5f67, #ffb054) border-box;
     color: #fff;
     border-bottom: 2px solid transparent;
 }
-
 
 .service-arrow {
     margin-left: 40px;

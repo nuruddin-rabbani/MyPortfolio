@@ -411,7 +411,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     .container {
         padding: 0 3%;
     }
@@ -451,6 +451,7 @@
     .hero-left {
         flex-basis: 60%;
         padding-right: 30px;
+        margin-right: 2%;
     }
 
     .hero-right {

@@ -9,6 +9,10 @@
     display: flex;
     justify-content: space-between;
     gap: 4rem;
+
+    animation-name: appear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 /* =====About Left======= */

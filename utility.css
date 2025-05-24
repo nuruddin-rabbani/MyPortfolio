@@ -1,52 +1,82 @@
 .gradientText {
-        background-image: var(--gradientColor);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: -2px -2px 0px rgba(59, 167, 235, 0.1);
+    background-image: var(--gradientColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -2px -2px 0px rgba(59, 167, 235, 0.1);
 }
 
 .para {
-        font-family: var(--textFont);
-        font-size: var(--textSize);
-        line-height: 2rem;
-        color: var(--textColor);
+    font-family: var(--textFont);
+    font-size: var(--textSize);
+    line-height: 2rem;
+    color: var(--textColor);
 }
 
 .cta-btn {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        text-decoration: none;
-        font-family: (var(--FontPrimary));
-        font-size: 1.375rem;
-        font-weight: 500;
-        line-height: 0;
-        background: var(--gradientButton);
-        color: #fff;
-        border: 2px solid transparent;
-        border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-family: (var(--FontPrimary));
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 0;
+    background: var(--gradientButton);
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 100px;
 }
 
 .cta-btn:hover {
-        opacity: 0.9;
+    opacity: 0.9;
 }
 
 .cta-btn img {
-        width: 22px;
+    width: 22px;
 }
 
 .container {
-        max-width: 1140px;
-        margin: 0 auto;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .text-center {
-        text-align: center;
+    text-align: center;
 }
 
 .section-title {
-        font-size: 3.5rem;
-        line-height: 1.5;
+    font-size: 3.5rem;
+    line-height: 1.5;
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes left2right {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes right2left {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}

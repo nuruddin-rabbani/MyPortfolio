@@ -1,6 +1,14 @@
 #pricing {
     background: #1e1e1e;
     padding: 150px 0;
+    position: relative;
+}
+
+.pricing-shadow {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    opacity: 0.3;
 }
 
 .pricing-title {

@@ -10,6 +10,16 @@
     background-position: center;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    z-index: 11;
 }
 
 .hero-container {
@@ -23,6 +33,7 @@
 .hero-left {
     flex-basis: 60%;
     margin-right: 10%;
+    z-index: 1;
 }
 
 .title-wrapper {

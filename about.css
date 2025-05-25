@@ -3,6 +3,14 @@
 #about {
     background: var(--aboutBgColor);
     padding: 150px 0;
+    position: relative;
+}
+
+.about-shadow {
+    position: absolute;
+    top: -250px;
+    right: 0;
+    opacity: 0.3;
 }
 
 .about-container {

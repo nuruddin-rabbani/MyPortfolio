@@ -1,6 +1,14 @@
 #contact {
-    background: #1E1E1E;
+    background: #1e1e1e;
     padding: 100px 0;
+    position: relative;
+}
+
+.contact-shadow {
+    position: absolute;
+    top: -250px;
+    right: 0;
+    opacity: 0.3;
 }
 
 .form-area {
